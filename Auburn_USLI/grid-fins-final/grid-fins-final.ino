@@ -51,7 +51,7 @@ Sd2Card card;
 //===================== Variables ========================
 
 // -- servo connection ports --
-int altServoPort = 12;
+int altServoPort = 8;
 int firstServoPort = 11;
 int secondServoPort = 9;
 // ----------------------------
@@ -330,7 +330,7 @@ void loop() {
     }
     
   }
-//******
+//****** Prints telemetric data to card
   logfile = SD.open("flight.txt", FILE_WRITE);
   Serial.print(altServoPosition);
   Serial.println("");
